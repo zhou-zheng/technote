@@ -2,12 +2,12 @@
 
 今天在阅读《Flask Web 开发》一书的 P69 时发现了“避免循环导入依赖”一词，在 google 之后初步搞懂这个问题，记录成此文。  
 这个问题简单来说，就是两个包产生了互相依赖之后导致 ImportError，举例说明最清晰明了。  
-[foo1.py]()
+[foo1.py](https://github.com/zhou-zheng/technote/blob/master/python/MutuallyImportProblem/foo1.py)
 ``` Python
 from bar1 import bar_var
 foo_var = 1
 ```
-[bar1.py]()
+[bar1.py](https://github.com/zhou-zheng/technote/blob/master/python/MutuallyImportProblem/bar1.py)
 ``` Python
 from foo1 import foo_var
 bar_var = 2
