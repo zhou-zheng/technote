@@ -50,7 +50,7 @@ ImportError: cannot import name 'bar_var'
 
 ---
 ### 问题解决
-找到了问题的原因，对症下药就可以了。一个简便取巧的做法就是调整代码顺序来打破这个循环依赖的怪圈。
+找到了问题的原因，对症下药就可以了。一个简便取巧的做法就是调整代码顺序来打破这个循环依赖的怪圈。  
 [foo2.py](https://github.com/zhou-zheng/technote/blob/master/python/MutuallyImportProblem/foo2.py)
 ``` Python
 foo_var = 1
